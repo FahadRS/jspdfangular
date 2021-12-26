@@ -1,0 +1,19 @@
+<button (click)="generateHtml()">
+  Generate Html
+</button>
+
+<button (click)="generatePDF()">
+  Generate PDF
+</button>
+
+<div style="height: 842px;
+            width: 595px;
+            margin-left: auto;
+            margin-right: auto;">
+            <div *ngIf="showHtml">
+              <div id="myHtml"  [innerHtml]="inlineMulti"></div>
+            </div>
+</div>
+
+
+ 
